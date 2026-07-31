@@ -15,6 +15,33 @@
 
     <!-- Cloudflare Turnstile Anti-Spam Script -->
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+    <style>
+        /* Custom styling for phone link in header */
+        .header-phone {
+            color: #d97706; /* Vibrant warm amber hue */
+            font-weight: 600;
+            text-decoration: none;
+            padding: 6px 14px;
+            border: 1px solid #d97706;
+            border-radius: 4px;
+            transition: all 0.2s ease-in-out;
+        }
+        .header-phone:hover {
+            background-color: #d97706;
+            color: #ffffff;
+        }
+
+        /* Styles for the updated footer contact layout */
+        .footer-details {
+            margin-top: 10px;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        .footer-details span {
+            margin: 0 8px;
+        }
+    </style>
 </head>
 <body>
 
@@ -23,6 +50,8 @@
         <nav class="nav-links">
             <a href="#about">About</a>
             <a href="#services">Practice Areas</a>
+            <!-- Replace 505-000-0000 with your actual phone number -->
+            <a href="tel:5050000000" class="header-phone">📞 (505) 000-0000</a>
             <a href="#contact" class="btn-primary">Contact</a>
         </nav>
     </header>
@@ -36,7 +65,7 @@
         </div>
     </section>
 
-<!-- Biography Section with Background Photo -->
+    <!-- Biography Section with Background Photo -->
     <section id="about" class="bio-section-premium">
         <div class="bio-glass-panel">
             <h2>About Dr. Mayer Landau</h2>
@@ -73,8 +102,7 @@
         <div class="services-grid">
             <div class="service-card">
                 <h3>Patent Prosecution</h3>
-                <p>Drafting and prosecuting high-stakes patent applications with deep technical expertise in optical systems, lasers, terahertz generation and detection,
-and semiconductor optoelectronics.</p>
+                <p>Drafting and prosecuting high-stakes patent applications with deep technical expertise in optical systems, lasers, terahertz generation and detection, and semiconductor optoelectronics.</p>
             </div>
             <div class="service-card">
                 <h3>IP Strategy & Consultation</h3>
@@ -90,10 +118,10 @@ and semiconductor optoelectronics.</p>
             <!-- Your unique access key -->
             <input type="hidden" name="access_key" value="41d775ec-784f-4478-9a0b-4e5d601a7ad0">
             
-           <input type="text" name="name" placeholder="Your Name" required>
-           <input type="email" name="email" placeholder="Your Email Address" required>
-           <input type="tel" name="phone" placeholder="Your Phone Number">
-           <textarea name="message" placeholder="Briefly describe your technology or legal need" rows="5" required></textarea>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number">
+            <textarea name="message" placeholder="Briefly describe your technology or legal need" rows="5" required></textarea>
               
             <!-- Cloudflare Turnstile Anti-Spam Widget (Optional but highly recommended) -->
             <!-- <div class="cf-turnstile" data-sitekey="0x4AAAAAAD7kCtltdoSoajpW"></div> -->
@@ -104,9 +132,13 @@ and semiconductor optoelectronics.</p>
     </section>
 
     <footer class="main-footer">
-        <p>&copy; 2026 Landau Legal Optics LLC. All Rights Reserved.</p>
+        <p><strong>Landau Legal Optics LLC</strong> | Albuquerque, New Mexico</p>
+        <p class="footer-details">
+            <!-- Replace 505-000-0000 with your phone number -->
+            Phone: <a href="tel:5050000000" style="color: inherit;">(505) 000-0000</a>
+        </p>
+        <p style="margin-top: 15px;">&copy; 2026 Landau Legal Optics LLC. All Rights Reserved.</p>
     </footer>
 
 </body>
 </html>
-
