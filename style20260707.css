@@ -363,7 +363,7 @@ body {
     .bio-highlights-premium {
         grid-template-columns: 1fr;
     }
-
+}
     /* Bio Photo Layout Constraints */
 .bio-intro-container {
     display: flex;
@@ -394,4 +394,4 @@ body {
         align-items: flex-start;
     }
 }
-}
+
