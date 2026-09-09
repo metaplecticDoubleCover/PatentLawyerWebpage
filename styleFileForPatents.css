@@ -393,3 +393,89 @@ body {
     }
 }
 
+/* --- Publications & Presentations Section --- */
+.publications-section {
+    padding: 90px 40px;
+    background-color: #0b1325; /* Deep rich navy background to separate from Practice Areas */
+    color: #e2e8f0;
+    text-align: center;
+    border-top: 2px solid rgba(212, 175, 55, 0.3); /* Subtle gold top border */
+    border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.publications-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #d4af37; /* Gold heading to pop against the navy */
+    letter-spacing: 1px;
+}
+
+.publications-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center; /* Centering container content */
+}
+
+.pub-category {
+    background: rgba(15, 23, 42, 0.7); /* Translucent dark card style */
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-top: 4px solid #d4af37; /* Solid gold top accent bar */
+    padding: 35px 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.pub-category h3 {
+    font-family: 'Cinzel', serif;
+    color: #f3cf5b;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-align: center; /* Explicitly centered category headings */
+}
+
+.pub-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left; /* Keeps long publication citations clean and readable */
+}
+
+.pub-list li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1); /* Subtle separator between individual citations */
+}
+
+.pub-list li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.pub-list strong {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.pub-list em {
+    color: #94a3b8;
+    font-style: italic;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+/* Elegant visual divider between Selected Publications and Conference Presentations */
+.pub-divider {
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    margin: 10px auto;
+}
