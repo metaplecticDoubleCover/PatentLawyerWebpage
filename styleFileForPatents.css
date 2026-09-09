@@ -178,22 +178,25 @@ body {
     font-size: 1.25rem;
 }
 
-/* --- Contact Section --- */
+/* --- Contact Section (Light High-Contrast CTA) --- */
 .contact-section {
-    padding: 80px 40px;
-    background-color: #0b1325;
-    color: #fff;
+    padding: 90px 40px;
+    background-color: #f1f5f9; /* Bright off-white/light gray background */
+    border-top: 4px solid #1e3a8a; /* Navy top border */
+    color: #0b1325;
     text-align: center;
 }
 
 .contact-section h2 {
     font-family: 'Cinzel', serif;
-    font-size: 2rem;
+    font-size: 2.3rem;
+    color: #0b1325; /* Dark navy heading */
     margin-bottom: 10px;
 }
 
 .contact-section p {
-    color: #94a3b8;
+    color: #475569;
+    font-size: 1.1rem;
     margin-bottom: 40px;
 }
 
@@ -202,23 +205,28 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .contact-form input, 
 .contact-form textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #334155;
-    background-color: #1e293b;
-    color: #fff;
+    border: 1px solid #cbd5e1;
+    background-color: #f8fafc;
+    color: #0f172a;
     border-radius: 4px;
     font-family: 'Inter', sans-serif;
 }
 
 .contact-form input::placeholder, 
 .contact-form textarea::placeholder {
-    color: #64748b;
+    color: #94a3b8;
 }
 
 .btn-submit {
