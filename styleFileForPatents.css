@@ -216,18 +216,31 @@ body {
 .contact-form input, 
 .contact-form textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #cbd5e1;
-    background-color: #f8fafc;
-    color: #0f172a;
+    padding: 14px;
+    border: 1px solid #94a3b8; /* Stronger border contrast around boxes */
+    background-color: #ffffff;
+    color: #0f172a; /* Dark text for typed input */
     border-radius: 4px;
     font-family: 'Inter', sans-serif;
+    font-size: 1rem;
 }
 
+/* HIGH-CONTRAST PLACEHOLDER TEXT FIX */
 .contact-form input::placeholder, 
 .contact-form textarea::placeholder {
-    color: #94a3b8;
+    color: #334155; /* Dark slate gray for crisp readability */
+    opacity: 1;    /* Overrides browser defaults that cause fading */
+    font-weight: 500;
 }
+
+/* Optional focus effect when clicking into a box */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #d4af37; /* Gold highlight when active */
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
 
 .btn-submit {
     background-color: #d4af37;
